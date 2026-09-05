@@ -1,3 +1,40 @@
+# Login Test Cases
+
+## TC_LOGIN_001 — Login with valid credentials
+
+- Username: `standard_user`
+- Password: `secret_sauce`
+- Expected: Login successful and Products page is displayed.
+- Status: PASS
+
+## TC_LOGIN_002 — Login with empty fields
+
+- Username: Empty
+- Password: Empty
+- Expected: Error message is displayed.
+- Status: PASS
+
+## TC_LOGIN_003 — Login with invalid username
+
+- Username: `wrong_user`
+- Password: `secret_sauce`
+- Expected: Error message is displayed.
+- Status: PASS
+
+## TC_LOGIN_004 — Login with invalid password
+
+- Username: `standard_user`
+- Password: `wrong_password`
+- Expected: Error message is displayed.
+- Status: PASS
+
+## TC_LOGIN_005 — Login with locked-out user
+
+- Username: `locked_out_user`
+- Password: `secret_sauce`
+- Expected: Login is rejected and error message is displayed.
+- Status: PASS
+  
 ## Products
 **TC_PRODUCT_001 — Verify Products page**
 
